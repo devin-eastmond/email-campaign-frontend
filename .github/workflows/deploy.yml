@@ -101,7 +101,7 @@ jobs:
           token: ${{ github.token }}
 
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-access-key-id: ${{ secrets[matrix.env.aws_key_name] }}
           aws-secret-access-key: ${{ secrets[matrix.env.aws_secret_name] }}
